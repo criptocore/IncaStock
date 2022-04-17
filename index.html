@@ -2,52 +2,80 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Banco de Imagenes IncaStock</title>
-    <link rel="stylesheet" href="./index.css">
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <title>Banco de Imagenes IncaStock</title>
+   <link rel="stylesheet" href="./css/index.css">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700;900&display=swap" rel="stylesheet">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700;900&display=swap" rel="stylesheet">
 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" />
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" />
 </head>
 
 <body class="body">
-    <header class="header">
-        <nav class="header-nav">
-            <div class="header-nav__container">
-                <a href="#" class="header-nav__link-logo-container">
-                    <img src="./img/logotipo-IncaStock.jpg" alt="logo incastock" class="header-nav__link-logo" />
-                </a>
-                <label for="headerNavMenuIcon" class="header-nav__menu-icon-label">
-                    <i class="bi bi-border-style"></i>
-                </label>
-                <input type="checkbox" name="" id="headerNavMenuIcon" class="header-nav__menu-icon-checkbox" />
-                <ul class="header-nav__menu-link-list">
-
-                    <li class="header-nav__menu-link-item">
-                        <a href="#" class="header-nav__menu-link">Inicio</a>
-                    </li>
-                    <li class="header-nav__menu-link-item">
-                        <a href="#" class="header-nav__menu-link">Imágenes</a>
-                    </li>
-                    <li class="header-nav__menu-link-item">
-                        <a href="#" class="header-nav__menu-link">Vectores</a>
-                    </li>
-                    <li class="header-nav__menu-link-item">
-                        <a href="#" class="header-nav__menu-link">Videos</a>
-                    </li>   
-                    <li class="header-nav__menu-link-item">
-                        <a href="https://www.facebook.com/" class="header-nav__menu-link header-nav__menu-link--active" target="_blank" rel="noopener noreferrer">Créditos</a>
-                    </li>
-                </ul>
-
+   <!-- Cabecera -->
+   <header class="header">
+      <nav class="header-nav">
+         <div class="header-nav__container">
+            <a href="#" class="header-nav__link-logo-container">
+               <img src="./img/logotipo-IncaStock.jpg" alt="logo incastock" class="header-nav__link-logo" />
+            </a>
+            <label for="headerNavMenuIcon" class="header-nav__menu-icon-label">
+               <i class="bi bi-border-style"></i>
+            </label>
+            <input type="checkbox" name="" id="headerNavMenuIcon" class="header-nav__menu-icon-checkbox" />
+            <ul class="header-nav__menu-link-list">
+               <li class="header-nav__menu-link-item">
+                  <a href="#" class="header-nav__menu-link">Inicio</a>
+               </li>
+               <li class="header-nav__menu-link-item">
+                  <a href="#" class="header-nav__menu-link">Imágenes</a>
+               </li>
+               <li class="header-nav__menu-link-item">
+                  <a href="#" class="header-nav__menu-link">Vectores</a>
+               </li>
+               <li class="header-nav__menu-link-item">
+                  <a href="#" class="header-nav__menu-link">Videos</a>
+               </li>
+               <li class="header-nav__menu-link-item">
+                  <a href="https://www.facebook.com/" class="header-nav__menu-link header-nav__menu-link--active"
+                     target="_blank" rel="noopener noreferrer">Créditos</a>
+               </li>
+            </ul>
+         </div>
+      </nav>
+   </header>
+   <!-- Description -->
+   <main class="main">
+      <article class="profile">
+         <div class="profile__container">
+            <div class="profile__info">
+               <h2 class="profile__info-titulo">INCA STOCK</h2>
+               <h1 class="profile__info-subtitulo">El mejor Banco de Imágenes, Vectores y Videos en alta resolución
+               </h1>
+               <p class="profile__info-description">El primer Banco de Imágenes del Perú, Fotografías de alta
+                  resolución y calidad, con permisos y licencias full stock</p>
+               <div class="profile__info-link-container">
+                  <a href="" class="profile__info-link">Imágenes</a>
+                  <!-- modificador -->
+                  <a href="" class="profile__info-link profile__info-link--active">Créditos</a>
+               </div>
             </div>
-        </nav>
-    </header>
+            <div class="profile__figure">
+               <figure class="profile__figure-container">
+                  <img src="./img/logotipo-IncaStock.jpg" alt="photography IncaStock" class="profile__figure-imag">
+                  <img src="./img/photography.png" alt="photography" class="profile__figure-one">
+                  <img src="./img/video.png" alt="video" class="profile__figure-two>
+                  <img src="./img/btc.png" alt="bitcoin" class="profile__figure-three>
+                  <img src="" alt="" class="profile__figure-four>
+               </figure>
+            </div>
+         </div>
+      </article>
+   </main>
 </body>
 
 </html>
