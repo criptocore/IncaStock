@@ -133,7 +133,7 @@
     background-color: var(--secundary-highlight);
     transition: var(--all-transition);
 }
-
+            
 .header-nav__menu-link:hover::after,
 .header-nav__menu-link--active::after {
     width: 100%;
@@ -156,3 +156,6 @@
         transition: var(--all-transition);
     }
 }
+
+
+
