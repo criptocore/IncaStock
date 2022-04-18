@@ -29,6 +29,7 @@
 .profile__container {
    display: grid;
    grid-template-columns: 1fr;
+   gap: 3rem;
    justify-items: center;
    max-width: var(--max-width-container);
    margin: auto;
@@ -83,9 +84,10 @@
    background-color: var(--button-color-active)
 }
 
-.profile__info-link--active {}
 
-.profile__figure {}
+.profile__figure {
+
+}
 
 .profile__figure-image-container {
    position: relative;
@@ -102,7 +104,7 @@
 .profile__figure-one {
    position: absolute;
    width: 25%;
-   top: 100;
+   top: 100%;
    left: 50%;
    transform: translate(-50%, -50%);
 }
@@ -118,7 +120,7 @@
 .profile__figure-three {
    position: absolute;
    width: 25%;
-   top: 100%;
+   top: 0%;
    left: 50%;
    transform: translate(-50%, -50%);
 }
