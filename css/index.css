@@ -23,8 +23,13 @@
    color: var(--text-color);
    font-family: 'Inter', sans-serif;
    margin: 0;
+   min-height: 200vh;
 }
 .main {
    width: 100%;
 }
-
+@media (min-width: 854px) {
+   :root {
+      --padding-container: 0 0.75em
+   }
+}
