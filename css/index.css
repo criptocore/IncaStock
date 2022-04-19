@@ -28,8 +28,4 @@
 .main {
    width: 100%;
 }
-@media (min-width: 854px) {
-   :root {
-      --padding-container: 0 0.75em
-   }
-}
+

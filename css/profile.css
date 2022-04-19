@@ -1,4 +1,5 @@
 :root {
+   scroll-behavior: smooth;
    --primary-theme-color: #20232a;
    --secondary-theme-color: #282c34;
    --text-color: #fff;
@@ -7,10 +8,10 @@
    --button-color: #61dafb;
    --button-color-active: #fff;
    --button-text-color: #000;
-   --primary-highlight: #61dafb;
-   --secondary-highlight: #ffd700;
-   --padding-section: 2em 0;
-   --padding-container: 0 2em;
+   --primary-highlight-color: #61dafb;
+   --secondary-highlight-color: #ffd700;
+   --padding-section: 4rem 0;
+   --padding-container: 0 2rem;
    --max-width-container: 1024px;
    --border-radius: 0.5rem;
    --all-transitions: all 0.25s;
@@ -30,31 +31,20 @@
    0% {
       margin-left: 0;
    }
-
    100% {
       margin-left: 1rem;
    }
 }
 
 .profile {
-   position: relative;
    display: flex;
-   justify-content: center;
    align-items: center;
+   justify-content: center;
    background-image: url(../img/machupicchu.jpg);
    background-size: cover;
    background-position: center;
    min-height: 100vh;
    overflow: hidden;
-}
-.profile::after {
-   content: '';
-   position: absolute;
-bottom: 0;
-left: 0;
-width: 100%;
-height: 6rem;
-background-image: linear-gradient(transparent, var(--primary-theme-color));
 }
 
 .profile__container {
@@ -70,11 +60,11 @@ background-image: linear-gradient(transparent, var(--primary-theme-color));
    flex-direction: column;
    gap: 1rem;
    background-color: var(--secondary-shadow-color);
+   border-radius: var(--border-radius);
    box-shadow:
       0 0 0 0.125rem var(--primary-shadow-color),
       0 0 0 0.25rem var(--primary-shadow-color);
    padding: 1rem;
-   border-radius: var(--border-radius);
    text-align: center;
    transition: var(--all-transitions);
 }
@@ -107,13 +97,13 @@ background-image: linear-gradient(transparent, var(--primary-theme-color));
 
 .profile__info-link {
    background-color: var(--button-color);
-   color: var(--button-text-color);
-   text-decoration: none;
-   text-shadow: 0 0 0.125rem var(--primary-highlight);
-   padding: 0.5em 1.5em;
    border-radius: var(--border-radius);
+   color: var(--button-text-color);
+   font-weight: 500;
+   text-shadow: 0 0 0.125rem var(--primary-highlight);
+   text-decoration: none;
+   padding: 0.5em 1.5em;
    transition: var(--all-transitions);
-
 }
 
 .profile__info-link:hover,
@@ -127,7 +117,6 @@ background-image: linear-gradient(transparent, var(--primary-theme-color));
    display: flex;
    align-items: center;
    justify-content: center;
-
 }
 
 .profile__figure-image-container {
@@ -135,12 +124,16 @@ background-image: linear-gradient(transparent, var(--primary-theme-color));
    display: flex;
    max-width: 256px;
    margin: 0;
-
 }
 
 .profile__figure-image {
-   width: 100%;
    border-radius: 50%;
+   width: 100%;
+   transition: var(--all-transitions);
+}
+.profile__figure-image:hover {
+   box-shadow:
+   0 0 0.25 0 var(--primary-highlight);
 }
 
 .profile__figure-one {
@@ -205,7 +198,6 @@ background-image: linear-gradient(transparent, var(--primary-theme-color));
 
    .profile__info-description {
       display: flex;
-      margin: 0;
    }
 
    .profile__info-link-container {
