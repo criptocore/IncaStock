@@ -72,8 +72,8 @@
 
 .profile__info:hover {
    box-shadow:
-      0 0 0 0.125rem var(--primary-highlight),
-      0 0 0.25rem 0 var(--secondary-highlight);
+      0 0 0 0.125rem var(--primary-highlight-color),
+      0 0 0.25rem 0 var(--secondary-highlight-color);
 }
 
 .profile__info-titulo {
@@ -183,23 +183,29 @@
 
    .profile__info-description {
       display: flex;
+      margin: 0;
    }
 
    .profile__info-titulo {
       font-size: 2.5rem;
    }
 
-   .profile__info-subtitulo {
-      font-size: 1.5rem;
+   .profile__container {
+      grid-template-columns: 1fr 1fr;
    }
+   .profile__info {
+      padding: 3rem;
+      /* text-align: start; */
+   }
+   
+.profile__info-link-container {
+   margin-top: 1.5rem;
+   gap: 3rem;
 
-
-
-
-
-
-
-
-
+   /* justify-content: flex-start; */
+}
+.profile__figure-image-container {
+   max-width: 360px;
+}
 
 }
