@@ -39,6 +39,7 @@
 
 .profile {
    display: flex;
+   position: relative;
    align-items: center;
    justify-content: center;
    background-image: url(../img/machupicchu.jpg);
@@ -46,6 +47,12 @@
    background-position: center;
    min-height: 100vh;
    overflow: hidden;
+}
+.profile::after {
+   background-color: #fff;
+   content: '';
+   position: absolute;
+  left: 0;
 }
 
 .profile__container {
@@ -207,5 +214,4 @@
 .profile__figure-image-container {
    max-width: 360px;
 }
-
 }
